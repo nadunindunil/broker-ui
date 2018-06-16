@@ -1,0 +1,31 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Please Join</h4>
+                    </div>
+                    <div class="content">
+                        <form class="form-signin" name="userform" method="post" #formCtrl="ngForm">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <!-- <label>Player Name</label> -->
+                                        <input required="" type="text" name="playerName" class="form-control" placeholder="Player Name" [(ngModel)]="playerName" >
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <button class="btn btn-success" type="submit" (click)="login()" [disabled]="formCtrl.form.invalid">JOIN</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
